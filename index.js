@@ -114,27 +114,3 @@ var isPallindrome = function (x) {
 //   if (reverse === s) return true;
 //   return false;
 // }
-
-var longestPalindrome = function (s) {
-  let result = '';
-  let longestPallindromeLength = 0;
-  for (let x = 0; x < s.length; x++) {
-    //odd
-    let [leftPointer, rightPointer] = [x, x];
-    console.log(leftPointer, rightPointer);
-    while (
-      leftPointer >= 0 &&
-      rightPointer < s.length &&
-      s[leftPointer] === s[rightPointer]
-    ) {
-      if (rightPointer - leftPointer + 1 > longestPallindromeLength) {
-        result = s.substring(leftPointer - 1, rightPointer + 1);
-        console.log(result);
-      }
-      leftPointer -= leftPointer;
-      rightPointer += rightPointer;
-    }
-  }
-};
-
-longestPalindrome('bab');
