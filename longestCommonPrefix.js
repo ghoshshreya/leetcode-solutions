@@ -1,18 +1,14 @@
 var longestCommonPrefix = function (strs) {
-  if (strs.length === 1) return strs[0];
-  strs = strs.sort();
-  const compareWith = strs[0].split('');
-  while (compareWith.length > 0) {
-    for (let z = 1; z < strs.length; z++) {
-      if (strs[z].indexOf(compareWith.join('')) !== 0) break;
-      // Last element comparison
-      if (z === strs.length - 1) {
-        return compareWith.join('');
-      }
-    }
-    compareWith.length = compareWith.length - 1;
+  if (strs.length === 0) return '';
+  strs = strs.sort(); // TO GET STRING WITH SMALLEST LENGTH ON THE FIRST FOR COMPARISON
+  const firstWord = strs[0]; //flow
+  const lastWord = strs[strs.length - 1]; //flower
+  const resultArray = [];
+  for (let x = 0; x < firstWord.length; x++) {
+    if (firstWord[x] !== lastWord[x]) break;
+    resultArray.push(firstWord[x]);
   }
-  return '';
+  return resultArray.join('');
 };
 
 console.log(longestCommonPrefix(['flwoer', 'flow']));
