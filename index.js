@@ -8,6 +8,7 @@ import './validParenthesis.js';
 import './mergeSortedList.js';
 import './reverseString.js';
 import './threeSum.js';
+import './twoSum.js';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');

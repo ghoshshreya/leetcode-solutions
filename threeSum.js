@@ -1,4 +1,3 @@
-console.log('hello');
 var threeSum = function (nums) {
   let threeSumArray = [];
   for (let x = 0; x < nums.length - 2; x++) {
@@ -10,9 +9,7 @@ var threeSum = function (nums) {
       }
     }
   }
-  console.log(threeSumArray);
+  return threeSumArray;
 };
 
-threeSum([-1, 0, 1, 2, -1, -4]);
-
-
+console.log(threeSum([-1, 0, 1, 2, -1, -4]));
