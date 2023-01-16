@@ -15,22 +15,22 @@
 // };
 
 // TWO POINTER APPROACH
-var maxArea = function (height) {
-  if (!height.length) return maxHeight;
-  if (height.length === 1) return height[0];
-  let left = 0;
-  let right = height.length - 1;
-  let maxArea = 0;
-  while (left <= right) {
-    area = Math.min(height[left], height[right]) * (right - left);
-    maxArea = Math.max(maxArea, area);
-    if (height[left] > height[right]) {
-      right = right - 1;
-    } else {
-      left = left + 1;
-    }
-  }
-  return maxArea;
-};
+// var maxArea = function (height) {
+//   if (!height.length) return maxHeight;
+//   if (height.length === 1) return height[0];
+//   let left = 0;
+//   let right = height.length - 1;
+//   let maxArea = 0;
+//   while (left <= right) {
+//     area = Math.min(height[left], height[right]) * (right - left);
+//     maxArea = Math.max(maxArea, area);
+//     if (height[left] > height[right]) {
+//       right = right - 1;
+//     } else {
+//       left = left + 1;
+//     }
+//   }
+//   return maxArea;
+// };
 
 console.log('maxArea', maxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]));
