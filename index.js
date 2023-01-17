@@ -12,6 +12,7 @@ import './twoSum.js';
 import './mergeIntervals.js';
 import './plusOne.js';
 import './addBinary.js';
+import './addString.js';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
