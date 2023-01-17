@@ -10,6 +10,8 @@ import './reverseString.js';
 import './threeSum.js';
 import './twoSum.js';
 import './mergeIntervals.js';
+import './plusOne.js';
+import './addBinary.js';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
