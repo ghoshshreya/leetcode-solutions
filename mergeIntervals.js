@@ -1,3 +1,4 @@
+// TODO
 var merge = function (intervals) {
   const overlappingIntervals = [];
   let x = 0;
@@ -20,10 +21,6 @@ var merge = function (intervals) {
   }
   return overlappingIntervals;
 };
-
-sortArray() {
-  
-}
 
 console.log(
   merge([
