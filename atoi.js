@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/string-to-integer-atoi/
 var myAtoi = function (s) {
   s = s.replaceAll(' ', ''); //removed white spaces
   let arr = s.split('');
