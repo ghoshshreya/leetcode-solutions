@@ -14,6 +14,7 @@ import './plusOne.js';
 import './addBinary.js';
 import './addString.js';
 import './reverseNumber.js';
+import './atoi.js';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
